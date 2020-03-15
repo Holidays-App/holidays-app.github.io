@@ -3,51 +3,113 @@
   <head>
     <meta charset="utf-8">
     <title>Holidays.</title>
-    <link rel="shortcut icon" href="./textures/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./textures/logo.png" type="image/png">
+    <script src="https://kit.fontawesome.com/273460c94f.js" crossorigin="anonymous"></script>
     <style>
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
       a {
         text-decoration: none;
         color: '#FFFFFF';
       }
+      #descriptionP1 span {
+          position: relative;
+        }
+      #descriptionP1 span:before {
+        content: "\201C";
+        position: absolute;
+        font: 2.4em serif;
+        left: -1em;
+        top: -0.5em;            
+      }
+      #descriptionP1 span:after {
+        content: "\201D";
+        font: 2.4em serif;
+        position: absolute;
+        right: -1em;
+        bottom: -1em;
+      }
     </style>
+
   </head>
-  <body link="#F3F3F3" vlink="#F3F3F3" alink="#F3F3F3" bgcolor="#F3F3F3" style="margin-top: 0.5em; margin: 0px">
-    <p style="text-align: center; color: #A5A5AE; font: 24pt sans-serif; ">Do you think the holidays are completely over?<br>Here you will find many holidays for every day!</p>
-    <p style="text-align: center;"><img style="height: 250px" src="./textures/logo.png"></p>
-    <p style="margin-top: 0;text-align: center; color: #000000; font: 33pt sans-serif; ">Holidays.</p>
+  <body link="#F3F3F3" vlink="#F3F3F3" alink="#F3F3F3" bgcolor="#F9FAFA" style="margin: 0px">
     <div style="
-    background-color: #FFFFFF;
-    width: 480px;
-    text-align: left;
-    margin: 0 auto;
-    height: 40%;
-    padding: 22px;
-    margin: auto;
-    color: #ADB4BC;
-    font: 24pt sans-serif;">«Holidays» - is a simple and convenient event guide for any day. The app provides access to information about any holidays on Russian and English languages. The app contains information about religious holidays, cultural holidays, job's holidays, festivals and many other equally interesting events.
+    background-color: #FFF;
+    left: 0;
+    height: 4em;
+    padding: 0.2em;
+    box-shadow: 0 6px 4px -4px rgba(122,122,122,0.5);
+    margin-bottom: 5em">
+      <p style="text-align: left; margin-top: 0.1em; line-height : 4em;">
+        <img style="height: 3.9em; float : left;" src="./textures/logo.png">
+        &emsp;
+        <span style="font: 1.6em sans-serif; margin-left: 0.3em;">Мобильное приложение <span style='color: #f7941d;'>«Holidays.»</span></span>
+        <img style="height: 3.1em; margin-right: 1.2em; padding-top: 0.3em; float : right;" src="./textures/unitedStatesFlag.png">
+        <img style="height: 3.1em; margin-right: 1.2em; padding-top: 0.3em; float : right;" src="./textures/russiaFlag.png">
+      </p>
     </div>
-    <p style="margin-top:10px;text-align: center; color: #000000; font: 33pt sans-serif; ">Download</p>
-    <div>
-      <div>
-        <p>Android</p>
-        <img src="./textures/android-download.png">
+    <p style="text-align: center;"><img style="height: 15em; -webkit-filter: drop-shadow(0.4em 0.4em 15px rgba(122,122,122,0.5)); filter: drop-shadow(0.4em 0.4em 15px rgba(122,122,122,0.5));" src="./textures/logo.png"></p>
+    <p style="margin-top: 1em; text-align: center; color: #FFFFFF; background-color: #f7941d; font: 4em sans-serif; ">Holidays.</p>
+    <div id="descriptionP2" style="
+    background-color: #FFF;
+    box-shadow: 0.4em 0.4em 15px rgba(122,122,122,0.5);
+    width: 18.2em;
+    text-align: left;
+    padding: 2em;
+    margin: 0 auto;
+    color: #000000;
+    font: 1.8em sans-serif;"><span style='color: #f7941d;font-style: italic'>«Holidays.»</span> — простой путеводитель по праздникам на каждый день 📅<br><br>Приложение напоминит и расскажет о всех праздниках, так что вы никогда не будете в стороне 🎉
+    </div>
+    <div id="descriptionP1" style="text-align: center; margin: 0 auto; padding: 5em; color: #8A9298; font: 1.8em sans-serif;  font-style: italic">
+      <span>Думаешь праздники совсем закончились?<br>Здесь ты найдешь десятки поводов на каждый день!</span>
+    </div>
+    <div id="download" style="background-color: #FFD100; margin-top:0.7em; text-align: center; color: #FFF; font: 4em sans-serif;">Скачать <i class="fas fa-cloud-download-alt"></i></div>
+    <div style='text-align : center; margin-bottom : 8em; margin-top : 4em;'>
+      <div style='display : inline-block; margin-right : 5em; background-color: #FFFFFF; border-radius: 1em; width: 13em; -webkit-filter: drop-shadow(0.4em 0.4em 15px rgba(122,122,122,0.5)); filter: drop-shadow(0.4em 0.4em 15px rgba(122,122,122,0.5));'>
+        <a href='https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40trauer/holidays-8062a64f0218448aa5a1d77b2df03a4c-signed.apk' download >
+          <p style='padding-top : 15px; color : #8A929E; font: 1.8em sans-serif;'>Android</p>
+          <div style='font-size: 8em; color: #7CB342; margin-bottom : 0.4em;'><i class="fab fa-android"></i></i></div>
+          <div style='font-size: 2.4em; color: #8A929E; margin-bottom : 1em;'><i class="fas fa-arrow-circle-down"></i></div>
+        </a>
+      </div>
+      <div style='display : inline-block; background-color: #FFFFFF; border-radius: 1em; width: 13em; -webkit-filter: drop-shadow(0.4em 0.4em 15px rgba(122,122,122,0.5)); filter: drop-shadow(0.4em 0.4em 15px rgba(122,122,122,0.5));'>
+        <a href='' download >
+          <p style='padding-top : 15px; color : #8A929E; font: 1.8em sans-serif;'>Ios</p>
+          <div style='font-size: 8em; color: #000; margin-bottom : 0.4em;'><i class="fab fa-apple"></i></div>
+          <div style='font-size: 2.4em; color: #d3d3d3; margin-bottom : 1em;'>скоро...</div>
+        </a>
       </div>
     </div>
     <div style="
     background-color: #00011F;
-    top: 100%;
-    width: 98%;
     left: 0;
     height: 20%;
     padding: 20px;">
       <p style="
       color: #F3F3F3;
-      top: 90%;
       transform: translate(0, -50%);"><a href="https://github.com/holidaysapp/holidaysapp.github.io">GitHub</a></p>
-      <p style="
-      color: #F3F3F3;">Contact: help.holidaysapp@gmail.com</p>
+      <p id="contact" style="
+      color: #F3F3F3;"></p>
     </div>
+    <script type="text/javascript">
+      var download = document.getElementById("download");
+      var descriptionP1 = document.getElementById("descriptionP1");
+      var descriptionP2 = document.getElementById("descriptionP2");
+      var contact = document.getElementById("contact");
+      async function loadData(){
+        var dictinory = await fetch(location.protocol+'//'+location.host+"/db/dictinoryForSite.json");
+        var dictinory = await dictinory.json();
 
+        var language = (window.navigator.language || navigator.userLanguage)=='ru-RU'?'ru':'en';
 
+        console.log(window.navigator.language || navigator.userLanguage)
+        download.innerHTML = dictinory[language].downloadText;
+        descriptionP1.innerHTML = dictinory[language].descriptionP1;
+        descriptionP2.innerHTML = dictinory[language].descriptionP2;
+        contact.innerHTML = dictinory[language].contactsText;
+      }
+      loadData()
+    </script>
   </body>
 </html>
