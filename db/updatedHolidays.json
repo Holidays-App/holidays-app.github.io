@@ -33,5 +33,22 @@
     "category": "Carnivals and festivals",
     "icon": "",
     "important": true
+  },
+  {
+    "us": {
+      "name": "тест1",
+      "description": "тест инф1",
+      "message": "тест уведмл1"
+    },
+    "ru": {
+      "name": "тест1",
+      "description": "тест инф1",
+      "message": "тест уведм1л"
+    },
+    "date": { "day": 16, "month": 4 },
+    "pictures": [""],
+    "category": "Carnivals and festivals",
+    "icon": "",
+    "important": true
   }
 ]
