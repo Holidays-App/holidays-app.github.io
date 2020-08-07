@@ -1,52 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="us" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <title>Hey</title>
   </head>
   <body>
     <div>
-      <p>RU</p>
-      <input type="text" id="name_ru" onchange="Output()" />
+      <input
+        type="text"
+        id="holiday_name"
+        placeholder="name"
+        onchange="Output()"
+      /><br />
       <textarea
-        id="description_ru"
+        id="description"
         rows="8"
         cols="80"
         onchange="Output()"
-      ></textarea>
+        placeholder="description"
+      ></textarea
+      ><br />
       <textarea
-        id="message_ru"
+        id="message"
         rows="8"
         cols="80"
         onchange="Output()"
-      ></textarea>
+        placeholder="message"
+      ></textarea
+      ><br />
     </div>
     <div>
-      <p>EN</p>
-      <input type="text" id="name_en" onchange="Output()" />
-      <textarea
-        id="description_en"
-        rows="8"
-        cols="80"
-        onchange="Output()"
-      ></textarea>
-      <textarea
-        id="message_en"
-        rows="8"
-        cols="80"
-        onchange="Output()"
-      ></textarea>
-    </div>
-    <div>
-      <p>parameters</p>
-      <input type="date" id="holiday_date" value="" onchange="Output()" />
-      <textarea
-        id="pictures"
-        rows="8"
-        cols="80"
-        placeholder="Pictures"
-        onchange="Output()"
-      ></textarea>
+      <input type="date" id="holiday_date" value="" onchange="Output()" /><br />
       <select id="category" onchange="Output()">
         <option>General holidays</option>
         <option>Traditional holidays</option>
@@ -55,57 +39,40 @@
         <option>Cultural Holiday</option>
         <option>Carnivals and festivals</option>
         <option>name-days</option>
-        <option>Birthdays</option>
-      </select>
-      <p>Important holiday</p>
-      <input type="checkbox" id="important" value="onn" onchange="Output()" />
+        <option>Birthdays</option> </select
+      ><br />
       <p>Notify or not</p>
-      <input type="checkbox" id="notify" value="onn" onchange="Output()" />
-      <input type="text" id="icon" onchange="Output()" />
+      <input type="checkbox" id="notify" onchange="Output()" />
+      <br />
+      <input type="text" id="icon" placeholder="icon" onchange="Output()" />
     </div>
     <p>Output</p>
     <textarea id="output" rows="8" cols="80"></textarea>
 
     <script type="text/javascript">
-      var name_ru = document.getElementById("name_ru");
-      var name_en = document.getElementById("name_en");
-      var description_ru = document.getElementById("description_ru");
-      var description_en = document.getElementById("description_en");
-      var message_ru = document.getElementById("message_ru");
-      var message_en = document.getElementById("message_en");
+      var holiday_name = document.getElementById("holiday_name");
+      var description = document.getElementById("description");
+      var message = document.getElementById("message");
       var holiday_date = document.getElementById("holiday_date");
-      var pictures = document.getElementById("pictures");
       var category = document.getElementById("category");
       var outputfild = document.getElementById("output");
       var icon = document.getElementById("icon");
-      var important = document.getElementById("important");
       var notify = document.getElementById("notify");
 
       function Output() {
-        console.log(important.value);
-        var pictures_array = pictures.value.split("\n");
         var date = new Date(holiday_date.value);
         day = date.getDate();
         month = date.getMonth() + 1;
         var a = {
-          en: {
-            name: name_en.value,
-            description: description_en.value,
-            message: message_en.value,
-          },
-          ru: {
-            name: name_ru.value,
-            description: description_ru.value,
-            message: message_ru.value,
-          },
+          name: holiday_name.value,
+          description: description.value,
+          message: message.value,
           date: {
-            day: day,
-            month: month,
+            day,
+            month,
           },
-          pictures: pictures_array,
           category: category.value,
           icon: icon.value,
-          important: important.checked,
           notify: notify.checked,
         };
         outputfild.value = JSON.stringify(a);

@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Новый год",
+    "description": "Новый год кра!!!",
+    "message": "С новым годом!!!",
+    "date": { "day": 1, "month": 1 },
+    "category": "General holidays",
+    "icon": "",
+    "notify": true
+  }
+]
