@@ -225,7 +225,8 @@
         var dictinory = await dictinory.json();
 
         var language =
-          (window.navigator.language || navigator.userLanguage) == "ru-RU"
+          (window.navigator.language || navigator.userLanguage) == "ru-RU" ||
+          (window.navigator.language || navigator.userLanguage) == "ru"
             ? "ru"
             : "en";
 
