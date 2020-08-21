@@ -1,13 +1,13 @@
 {
   "ru": {
-    "description": "«Holidays» - is a simple and convenient event guide for any day. The app provides access to information about any holidays on Russian and English languages. The app contains information about religious holidays, cultural holidays, job's holidays, festivals and many other equally interesting events.",
-    "downloadText": "Download",
-    "contactsText": "Contact: help.holidaysapp@gmail.com"
-  },
-  "us": {
     "description": "«Holidays» — простой путеводитель по праздникам на каждый день 📅<br><br>Приложение напоминит и расскажет о всех праздниках, так что вы никогда не будете в стороне 🎉",
     "downloadText": "Скачать",
     "contactsText": "Связь: help.holidaysapp@gmail.com"
+  },
+  "us": {
+    "description": "«Holidays» - is a simple and convenient event guide for any day. The app provides access to information about any holidays on Russian and English languages. The app contains information about religious holidays, cultural holidays, job's holidays, festivals and many other equally interesting events.",
+    "downloadText": "Download",
+    "contactsText": "Contact: help.holidaysapp@gmail.com"
   },
   "default": {
     "appName": "Holidays"
