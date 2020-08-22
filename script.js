@@ -21,7 +21,7 @@ const { default: defaultDictinory, us: usDictinory, ru: ruDictinory } = {
   },
 };
 
-const setLanguage = (language) => {
+function setLanguage(language) {
   let dictinory = {};
   if (language == "ru") {
     Object.assign(dictinory, ruDictinory, defaultDictinory);
@@ -60,7 +60,18 @@ const setLanguage = (language) => {
   document.querySelector(
     "#settingsScreenScreenshot"
   ).src = `assets/screenshots/${language}/settingsScreenScreenshot.png`;
-};
+}
+
+function scrollToTargetAdjusted(selector, offset = 0) {
+  var element = document.querySelector(selector);
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition - offset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+}
 
 const onLoadFunc = () => {
   setLanguage(
@@ -75,6 +86,11 @@ const onLoadFunc = () => {
   document
     .querySelector("#usFlag")
     .addEventListener("click", () => setLanguage("us"));
+  document
+    .querySelector("#goToDownloadButton")
+    .addEventListener("click", () =>
+      scrollToTargetAdjusted("#downloadTitle", 40)
+    );
 };
 
 if (document.readyState == "loading") {
