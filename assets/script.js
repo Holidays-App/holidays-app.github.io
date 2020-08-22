@@ -1,7 +1,7 @@
 const { default: defaultDictinory, us: usDictinory, ru: ruDictinory } = {
   ru: {
     description:
-      "«Holidays» — простой путеводитель по праздникам на каждый день 📅<br><br>Приложение напоминит и расскажет о всех праздниках, так что вы никогда не будете в стороне 🎉",
+      "«Holidays» - простой путеводитель по праздникам на каждый день 📅<br><br>Приложение напоминит и расскажет о всех праздниках, так что вы никогда не будете в стороне 🎉",
     downloadTitle: 'Скачать <i class="fas fa-cloud-download-alt"></i>',
     contactsText: "Связь: help.holidaysapp@gmail.com",
     screenshotsTitle: 'Скриншоты <i class="fas fa-mobile-alt"></i>',
@@ -64,7 +64,7 @@ function setLanguage(language) {
 
 function scrollToTargetAdjusted(selector, offset = 0) {
   var element = document.querySelector(selector);
-  var elementPosition = element.getBoundingClientRect().top;
+  var elementPosition = element.getBoundingClientRect().top + window.scrollY;
   var offsetPosition = elementPosition - offset;
 
   window.scrollTo({

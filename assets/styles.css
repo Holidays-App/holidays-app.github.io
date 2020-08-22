@@ -1,0 +1,139 @@
+body {
+  text-align: center;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: white;
+  border-radius: 18px;
+  filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
+}
+
+.title {
+  width: 95%;
+  text-align: center;
+  font: 50px sans-serif;
+  margin: 7% auto 0;
+  padding: 10px 0 10px 0;
+}
+
+.flagButtons {
+  padding: 18px;
+  position: absolute;
+  right: 2.5%;
+  top: 2.5%;
+}
+
+#ruFlag {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#usFlag {
+  cursor: pointer;
+}
+
+.appName {
+  margin: 0 auto;
+  font: 60px sans-serif;
+  color: #f7941d;
+}
+
+.description {
+  width: 40%;
+  text-align: left;
+  color: #000000;
+  font: 37px sans-serif;
+  margin: 4% auto;
+  padding: 30px;
+}
+
+#goToDownloadButton {
+  cursor: pointer;
+  padding: 18px;
+  position: absolute;
+  right: 2.5%;
+  top: 88%;
+  font: 37px sans-serif;
+  color: #4965d6;
+}
+
+.screenshotsTitle {
+  color: #14aa46;
+}
+
+.screenshotsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 4% auto 0;
+}
+
+#downloadTitle {
+  color: #4965d6;
+}
+
+.downloadContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 7% auto 0;
+}
+
+.androidDownlodContainer {
+  margin-right: 75px;
+  padding: 30px;
+  width: 150px;
+  height: 320px;
+}
+
+.iosDownlodContainer {
+  margin-left: 75px;
+  padding: 30px;
+  width: 150px;
+  height: 320px;
+}
+
+.osName {
+  font: 37px sans-serif;
+  color: #8a929e;
+}
+
+.osIcon {
+  font-size: 130px;
+  margin: 30px 0 30px;
+}
+
+.androidIcon {
+  color: #7cb342;
+}
+
+.iosIcon {
+  color: #000000;
+}
+
+.downloadArrowDown {
+  font-size: 50px;
+  color: #8a929e;
+}
+
+.infoContainer {
+  background-color: #1f2333;
+  text-align: left;
+  color: #ffffff;
+  font: 25px sans-serif;
+  margin-top: 10%;
+  padding: 30px;
+}
+
+.githubLink {
+  color: #ffffff;
+}
+
+.contactsText {
+  margin-top: 20px;
+}

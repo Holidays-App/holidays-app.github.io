@@ -5,222 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Holidays App</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link href="styles.css" rel="stylesheet" />
+    <link href="assets/styles.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/273460c94f.js"
       crossorigin="anonymous"
       async
     ></script>
-    <script src="script.js" async></script>
+    <script src="assets/script.js" async></script>
   </head>
-  <body style="text-align: center; background-color: #ffffff;">
-    <div
-      style="
-        background-color: white;
-        border-radius: 18px;
-        filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
-        padding: 18px;
-        position: absolute;
-        right: 2.5%;
-        top: 2.5%;
-      "
-    >
-      <img
-        alt="ruFlag"
-        id="ruFlag"
-        height="70px"
-        style="margin-right: 15px; cursor: pointer;"
-      />
-      <img alt="usFlag" id="usFlag" height="70px" style="cursor: pointer;" />
+  <body>
+    <div class="flagButtons container">
+      <img alt="ruFlag" id="ruFlag" height="70px" />
+      <img alt="usFlag" id="usFlag" height="70px" />
     </div>
     <img src="assets/logo.png" alt="Logo" class="logoImage" height="450px" />
-    <div
-      class="appName"
-      style="
-        background-color: white;
-        width: 95%;
-        margin: 0 auto;
-        border-radius: 18px;
-        filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
-        font: 60px sans-serif;
-        color: #f7941d;
-        padding: 10px 0 10px 0;
-      "
-    ></div>
-    <div
-      class="description"
-      style="
-        width: 40%;
-        background-color: #fff;
-        border-radius: 18px;
-        filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
-        text-align: left;
-        color: #000000;
-        font: 37px sans-serif;
-        margin: 4% auto;
-        padding: 30px;
-      "
-    ></div>
-    <div
-      class="downloadTitle"
-      id="goToDownloadButton"
-      style="
-        background-color: white;
-        cursor: pointer;
-        border-radius: 18px;
-        filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
-        padding: 18px;
-        position: absolute;
-        right: 2.5%;
-        top: 88%;
-        font: 37px sans-serif;
-        color: #ffd100;
-      "
-    ></div>
-    <div
-      class="screenshotsTitle"
-      style="
-        width: 95%;
-        background-color: #fff;
-        border-radius: 18px;
-        filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
-        text-align: center;
-        color: #14aa46;
-        font: 50px sans-serif;
-        margin: 7% auto 0;
-        padding: 10px 0 10px 0;
-      "
-    ></div>
-    <div
-      style="
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 4% auto 0;
-      "
-    >
+    <div class="appName title container"></div>
+    <div class="description container"></div>
+    <div class="downloadTitle container" id="goToDownloadButton"></div>
+    <div class="screenshotsTitle title container"></div>
+    <div class="screenshotsContainer">
       <img
         alt="upcomingHolidaysScreenScreenshot"
         id="upcomingHolidaysScreenScreenshot"
+        class="container"
         height="740px"
-        style="
-          background-color: #fff;
-          border-radius: 18px;
-          filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
-          margin-right: 100px;
-        "
+        style="margin-right: 100px;"
       />
       <img
         alt="categoriesScreenScreenshot"
         id="categoriesScreenScreenshot"
+        class="container"
         height="740px"
-        style="
-          background-color: #fff;
-          border-radius: 18px;
-          filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
-          margin-right: 100px;
-        "
+        style="margin-right: 100px;"
       />
       <img
         alt="settingsScreenScreenshot"
         id="settingsScreenScreenshot"
+        class="container"
         height="740px"
-        style="
-          background-color: #fff;
-          border-radius: 18px;
-          filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
-        "
       />
     </div>
-    <div
-      class="downloadTitle"
-      id="downloadTitle"
-      style="
-        width: 95%;
-        background-color: #fff;
-        border-radius: 18px;
-        filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
-        text-align: center;
-        color: #ffd100;
-        font: 50px sans-serif;
-        margin: 7% auto 0;
-        padding: 10px 0 10px 0;
-      "
-    ></div>
-    <div
-      style="
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 7% auto 0;
-      "
-    >
+    <div class="downloadTitle title container" id="downloadTitle"></div>
+    <div class="downloadContainer">
       <a href="builds/android/Holidays-app_v0.1.4.apk" download>
-        <div
-          style="
-            margin-right: 75px;
-            background-color: #ffffff;
-            border-radius: 18px;
-            filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
-            padding: 30px;
-            width: 150px;
-            height: 320px;
-          "
-        >
-          <div style="font: 37px sans-serif; color: #000000;">
+        <div class="container androidDownlodContainer">
+          <div class="osName">
             Android
           </div>
-          <div style="font-size: 130px; color: #7cb342; margin: 30px 0 30px;">
+          <div class="osIcon androidIcon">
             <i class="fab fa-android"></i>
           </div>
-          <div style="font-size: 50px; color: #8a929e;">
+          <div class="downloadArrowDown">
             <i class="fas fa-arrow-circle-down"></i>
           </div>
         </div>
       </a>
       <a download>
-        <div
-          style="
-            margin-left: 75px;
-            background-color: #ffffff;
-            border-radius: 18px;
-            filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
-            padding: 30px;
-            width: 150px;
-            height: 320px;
-          "
-        >
-          <div style="font: 37px sans-serif; color: #000000;">
+        <div class="container iosDownlodContainer">
+          <div class="osName">
             Ios
           </div>
-          <div style="font-size: 130px; color: #000000; margin: 30px 0 30px;">
+          <div class="osIcon iosIcon">
             <i class="fab fa-apple"></i>
           </div>
           <div
-            class="soonText"
-            style="font: 33px sans-serif; color: #8a929e;"
+            class="soonText downloadArrowDown"
+            style="font: 33px sans-serif;"
           ></div>
         </div>
       </a>
     </div>
-    <div
-      style="
-        background-color: #1f2333;
-        border-radius: 18px;
-        filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
-        text-align: left;
-        color: #ffffff;
-        font: 25px sans-serif;
-        margin-top: 10%;
-        padding: 30px;
-      "
-    >
+    <div class="infoContainer container">
       <a
         class="githubLink"
         href="http://github.com/Holidays-App/Holidays-App"
-        style="color: #ffffff;"
       ></a>
-      <div class="contactsText" style="margin-top: 20px;"></div>
+      <div class="contactsText"></div>
     </div>
   </body>
 </html>
