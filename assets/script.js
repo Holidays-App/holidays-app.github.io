@@ -32,7 +32,6 @@ function setLanguage(language) {
   for (let key in dictinory) {
     if (dictinory.hasOwnProperty(key)) {
       let elements = document.getElementsByClassName(key);
-      console.log(elements, key);
       for (let index = 0; index < elements.length; index++) {
         elements[index].innerHTML = dictinory[key];
       }

@@ -1,0 +1,143 @@
+body {
+  text-align: center;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: white;
+  border-radius: 18px;
+  filter: drop-shadow(0 2px 8px rgba(50, 50, 50, 0.16));
+}
+
+.title {
+  width: 95%;
+  text-align: center;
+  font: 30px sans-serif;
+  margin: 7% auto 0;
+  padding: 8px 0;
+}
+
+.flagButtons {
+  position: absolute;
+  overflow: hidden;
+  width: 63px;
+  height: 63px;
+  right: 5%;
+  top: 2%;
+  transition: width 200ms linear;
+}
+
+.selectedLanguageFlag {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+.unselectedLanguageFlag {
+  position: absolute;
+  top: 8px;
+  left: 63px;
+}
+
+.appName {
+  margin: 0 auto;
+  font: 35px sans-serif;
+  color: #f7941d;
+}
+
+.description {
+  width: 90%;
+  text-align: left;
+  color: #000000;
+  font: 21px sans-serif;
+  padding: 5%;
+}
+
+#goToDownloadButton {
+  position: fixed;
+  z-index: 4;
+  padding: 15px;
+  right: 6.5%;
+  bottom: 6%;
+  font: 23px sans-serif;
+  color: #4965d6;
+  transition: transform 500ms ease-out;
+  transform: none;
+}
+
+.screenshotsTitle {
+  color: #14aa46;
+}
+
+.swipePageAnimating {
+  transition: transform 200ms linear;
+}
+
+#downloadTitle {
+  color: #4965d6;
+}
+
+.downloadContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 7% auto 0;
+}
+
+.androidDownlodContainer {
+  margin-right: 20px;
+  padding: 30px;
+  width: 75px;
+  height: 200px;
+}
+
+.iosDownlodContainer {
+  margin-left: 20px;
+  padding: 30px;
+  width: 75px;
+  height: 200px;
+}
+
+.osName {
+  font: 24px sans-serif;
+  color: #8a929e;
+}
+
+.osIcon {
+  font-size: 70px;
+  margin: 30px 0 30px;
+}
+
+.androidIcon {
+  color: #7cb342;
+}
+
+.iosIcon {
+  color: #000000;
+}
+
+.downloadArrowDown {
+  font-size: 30px;
+  color: #8a929e;
+}
+
+.infoContainer {
+  background-color: #1f2333;
+  text-align: left;
+  color: #ffffff;
+  font: 15px sans-serif;
+  margin-top: 10%;
+  padding: 20px;
+}
+
+.githubLink {
+  color: #ffffff;
+}
+
+.contactsText {
+  margin-top: 10px;
+}
