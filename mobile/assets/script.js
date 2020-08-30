@@ -2,22 +2,22 @@ const { default: defaultDictinory, us: usDictinory, ru: ruDictinory } = {
   ru: {
     description:
       "«Holidays» - простой путеводитель по праздникам на каждый день 📅<br><br>Приложение напоминит и расскажет о всех праздниках, так что вы никогда не будете в стороне 🎉",
-    downloadTitle: 'Скачать <i class="fas fa-cloud-download-alt"></i>',
-    contactsText: "Связь: help.holidaysapp@gmail.com",
-    screenshotsTitle: 'Скриншоты <i class="fas fa-mobile-alt"></i>',
-    soonText: "Скоро...",
+    download: 'Скачать <i class="fas fa-cloud-download-alt"></i>',
+    contacts: "Связь: help.holidaysapp@gmail.com",
+    screenshots: 'Скриншоты <i class="fas fa-mobile-alt"></i>',
+    soon: "Скоро...",
   },
   us: {
     description:
       "«Holidays» - a simple holiday guide for every day 📅<br><br>The application will remind and tell you about all the holidays, so you will never be on the sidelines 🎉",
-    downloadTitle: 'Download <i class="fas fa-cloud-download-alt"></i>',
-    contactsText: "Contact: help.holidaysapp@gmail.com",
-    screenshotsTitle: 'Screenshots <i class="fas fa-mobile-alt"></i>',
-    soonText: "Soon...",
+    download: 'Download <i class="fas fa-cloud-download-alt"></i>',
+    contacts: "Contact: help.holidaysapp@gmail.com",
+    screenshots: 'Screenshots <i class="fas fa-mobile-alt"></i>',
+    soon: "Soon...",
   },
   default: {
     appName: "Holidays",
-    githubLink: "Github",
+    github: "Github",
   },
 };
 
@@ -33,94 +33,95 @@ function initMobileSwiper() {
     }
   }
 
-  document.querySelectorAll(".swipeContainer").forEach((element) => {
+  document.querySelectorAll(".screenshotContainer").forEach((element) => {
     element.addEventListener("transitionend", () =>
-      element.classList.toggle("swipePageAnimating")
+      element.classList.toggle("screenshotSwipeAnimating")
     );
   });
 
   let x, y;
   let translateX = 0;
 
-  document.querySelector("#swiper").addEventListener("touchstart", (event) => {
-    let touch = event.changedTouches[0];
-    x = touch.pageX;
-    y = touch.pageY;
-  });
+  document
+    .querySelector(".screenshotsSwiper")
+    .addEventListener("touchstart", (event) => {
+      let touch = event.changedTouches[0];
+      x = touch.pageX;
+      y = touch.pageY;
+    });
 
-  document.querySelector("#swiper").addEventListener("touchmove", (event) => {
-    let touch = event.changedTouches[0];
-    let newX = touch.pageX;
-    let newY = touch.pageY;
+  document
+    .querySelector(".screenshotsSwiper")
+    .addEventListener("touchmove", (event) => {
+      let touch = event.changedTouches[0];
+      let newX = touch.pageX;
+      let newY = touch.pageY;
 
-    if (Math.abs(x - newX) > Math.abs(y - newY) * 2) {
-      event.preventDefault();
-      let delta = x - touch.pageX;
-      translateX -= delta;
+      if (Math.abs(x - newX) > Math.abs(y - newY) * 2) {
+        event.preventDefault();
+        let delta = x - touch.pageX;
+        translateX -= delta;
 
-      document.querySelectorAll(".swipeContainer").forEach((element) => {
-        element.style.transform = `translateX(${translateX}px)`;
-      });
-    }
+        document.querySelectorAll(".screenshotContainer").forEach((element) => {
+          element.style.transform = `translateX(${translateX}px)`;
+        });
+      }
 
-    x = newX;
-    y = newY;
-  });
+      x = newX;
+      y = newY;
+    });
 
-  const touchEndFunc = () => {
-    translateX = closestNum(translateX, [
+  function touchEndFunc() {
+    const screenShotsTranslatesX = [
       0,
-      -1 * window.innerWidth * 0.95,
-      -2 * window.innerWidth * 0.95,
-    ]);
+      -1 * document.querySelector(".screenshotsSwiper").offsetWidth,
+      -2 * document.querySelector(".screenshotsSwiper").offsetWidth,
+    ];
 
-    document.querySelectorAll(".swipeContainer").forEach((element) => {
-      element.classList.toggle("swipePageAnimating");
+    translateX = closestNum(translateX, screenShotsTranslatesX);
+
+    document.querySelectorAll(".screenshotContainer").forEach((element) => {
+      element.classList.toggle("screenshotSwipeAnimating");
       element.style.transform = `translateX(${translateX}px)`;
     });
 
-    document.querySelectorAll(".screenshotNum").forEach((element, index) => {
-      if (
-        [
-          0,
-          -1 * window.innerWidth * 0.95,
-          -2 * window.innerWidth * 0.95,
-        ].indexOf(translateX) == index
-      ) {
-        element.style.backgroundColor = "#14aa46";
-      } else {
-        element.style.backgroundColor = "#8a929e";
-      }
-    });
-  };
-
-  document.querySelector("#swiper").addEventListener("touchend", touchEndFunc);
+    document
+      .querySelectorAll(".screenshotNavigationTab")
+      .forEach((element, index) => {
+        if (screenShotsTranslatesX.indexOf(translateX) == index) {
+          element.classList.add("screenshotNavigationSelectedTab");
+        } else {
+          element.classList.remove("screenshotNavigationSelectedTab");
+        }
+      });
+  }
 
   document
-    .querySelector("#swiper")
+    .querySelector(".screenshotsSwiper")
+    .addEventListener("touchend", touchEndFunc);
+
+  document
+    .querySelector(".screenshotsSwiper")
     .addEventListener("touchcansel", touchEndFunc);
 }
 
 function initMobileLanguageSwitcher() {
-  const maxFlagButtonsW = "118px",
-    minFlagButtonsW = "63px";
-
-  const setUsLanguage = () => {
+  function setUsLanguage() {
     removeAllListeners();
-    document.querySelector(".flagButtons").style.width = minFlagButtonsW;
+    document.querySelector(".flagButtons").classList.remove("flagButtonsFull");
     setLanguage("us");
-  };
-  const setRuLanguage = () => {
+  }
+  function setRuLanguage() {
     removeAllListeners();
-    document.querySelector(".flagButtons").style.width = minFlagButtonsW;
+    document.querySelector(".flagButtons").classList.remove("flagButtonsFull");
     setLanguage("ru");
-  };
-  const showFlagButtons = () => {
+  }
+  function showFlagButtons() {
     removeAllListeners();
-    document.querySelector(".flagButtons").style.width = maxFlagButtonsW;
-  };
+    document.querySelector(".flagButtons").classList.add("flagButtonsFull");
+  }
 
-  const removeAllListeners = () => {
+  function removeAllListeners() {
     document
       .querySelector("#ruFlag")
       .removeEventListener("click", setRuLanguage);
@@ -130,13 +131,16 @@ function initMobileLanguageSwitcher() {
     document
       .querySelector(".flagButtons")
       .removeEventListener("click", showFlagButtons);
-  };
+  }
 
   document
     .querySelector(".flagButtons")
     .addEventListener("transitionend", () => {
-      let elementW = document.querySelector(".flagButtons").style.width;
-      if (elementW == maxFlagButtonsW) {
+      if (
+        document
+          .querySelector(".flagButtons")
+          .classList.contains("flagButtonsFull")
+      ) {
         document
           .querySelector("#ruFlag")
           .addEventListener("click", setRuLanguage);
@@ -153,6 +157,36 @@ function initMobileLanguageSwitcher() {
   document
     .querySelector(".flagButtons")
     .addEventListener("click", showFlagButtons);
+}
+
+function initMobileScrollToDownloadButton() {
+  function scrollToTargetAdjusted(selector, offset = 0) {
+    var element = document.querySelector(selector);
+    var elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
+
+  document
+    .querySelector(".scrollToDownloadButton")
+    .addEventListener("click", () =>
+      scrollToTargetAdjusted(".downloadTitle", 40)
+    );
+
+  window.addEventListener("scroll", () => {
+    let element = document.querySelector(".scrollToDownloadButton");
+    if (window.scrollY >= 150) {
+      if (!element.classList.contains("scrollToDownloadButtonHidden"))
+        element.classList.add("scrollToDownloadButtonHidden");
+    } else {
+      if (element.classList.contains("scrollToDownloadButtonHidden"))
+        element.classList.remove("scrollToDownloadButtonHidden");
+    }
+  });
 }
 
 function setLanguage(language) {
@@ -180,13 +214,11 @@ function setLanguage(language) {
         ? "assets/flags/ruFlagSelect.png"
         : "assets/flags/ruFlag.png";
 
-    element.classList.add(
-      language == "ru" ? "selectedLanguageFlag" : "unselectedLanguageFlag"
-    );
-
-    element.classList.remove(
-      language == "ru" ? "unselectedLanguageFlag" : "selectedLanguageFlag"
-    );
+    if (language == "ru") {
+      element.classList.add("selectedLanguageFlag");
+    } else {
+      element.classList.remove("selectedLanguageFlag");
+    }
   }
 
   {
@@ -197,13 +229,11 @@ function setLanguage(language) {
         ? "assets/flags/usFlagSelect.png"
         : "assets/flags/usFlag.png";
 
-    element.classList.add(
-      language == "us" ? "selectedLanguageFlag" : "unselectedLanguageFlag"
-    );
-
-    element.classList.remove(
-      language == "us" ? "unselectedLanguageFlag" : "selectedLanguageFlag"
-    );
+    if (language == "us") {
+      element.classList.add("selectedLanguageFlag");
+    } else {
+      element.classList.remove("selectedLanguageFlag");
+    }
   }
 
   document.querySelector(
@@ -219,42 +249,10 @@ function setLanguage(language) {
   ).src = `assets/screenshots/${language}/settingsScreenScreenshot.png`;
 }
 
-function scrollToTargetAdjusted(selector, offset = 0) {
-  var element = document.querySelector(selector);
-  var elementPosition = element.getBoundingClientRect().top + window.scrollY;
-  var offsetPosition = elementPosition - offset;
-
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth",
-  });
-}
-
 const onLoadFunc = () => {
   initMobileSwiper();
   initMobileLanguageSwitcher();
-
-  document
-    .querySelector("#goToDownloadButton")
-    .addEventListener("click", () =>
-      scrollToTargetAdjusted("#downloadTitle", 40)
-    );
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY >= 150) {
-      if (
-        document.querySelector("#goToDownloadButton").style.transform !=
-        "translateX(200%)"
-      )
-        document.querySelector("#goToDownloadButton").style.transform =
-          "translateX(200%)";
-    } else {
-      if (
-        document.querySelector("#goToDownloadButton").style.transform != "none"
-      )
-        document.querySelector("#goToDownloadButton").style.transform = "none";
-    }
-  });
+  initMobileScrollToDownloadButton();
 
   setLanguage(
     (window.navigator.language || navigator.userLanguage) == "ru-RU" ||

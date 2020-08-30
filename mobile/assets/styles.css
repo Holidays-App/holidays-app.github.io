@@ -14,89 +14,140 @@ a {
 }
 
 .title {
-  width: 95%;
+  width: auto;
   text-align: center;
   font: 30px sans-serif;
-  margin: 7% auto 0;
+  margin: 7% 4% 0;
   padding: 8px 0;
 }
 
 .flagButtons {
   position: absolute;
   overflow: hidden;
-  width: 63px;
-  height: 63px;
-  right: 5%;
+  right: 4%;
   top: 2%;
+  height: 63px;
+  width: 63px;
   transition: width 200ms linear;
 }
 
-.selectedLanguageFlag {
-  position: absolute;
-  left: 8px;
-  top: 8px;
+.flagButtonsFull {
+  width: 118px;
 }
 
-.unselectedLanguageFlag {
+.languageFlag {
   position: absolute;
   top: 8px;
   left: 63px;
+  height: 47px;
 }
 
-.appName {
+.selectedLanguageFlag {
+  left: 8px;
+}
+
+.logo {
+  width: 78%;
   margin: 0 auto;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+}
+
+.appTitle {
+  margin-top: 0;
   font: 35px sans-serif;
   color: #f7941d;
 }
 
-.description {
-  width: 90%;
+.descriptionText {
+  margin: 7% 5% 0;
+  width: auto;
   text-align: left;
   color: #000000;
   font: 21px sans-serif;
-  padding: 5%;
+  background-color: none;
+  border-radius: none;
+  filter: none;
 }
 
-#goToDownloadButton {
+.scrollToDownloadButton {
   position: fixed;
   z-index: 4;
   padding: 15px;
-  right: 6.5%;
+  right: 4%;
   bottom: 6%;
   font: 23px sans-serif;
   color: #4965d6;
   transition: transform 500ms ease-out;
-  transform: none;
+}
+
+.scrollToDownloadButtonHidden {
+  transform: translateX(200%);
 }
 
 .screenshotsTitle {
   color: #14aa46;
 }
 
-.swipePageAnimating {
+.screenshotsSwiper {
+  width: 100%;
+  overflow: hidden;
+  padding: 7% 0;
+}
+
+.screenshotsContainer {
+  width: 300%;
+}
+
+.screenshotContainer {
+  width: 33.333333333%;
+  float: left;
+}
+
+.screenshotSwipeAnimating {
   transition: transform 200ms linear;
 }
 
-#downloadTitle {
+.screenshot {
+  width: 80%;
+  max-width: 400px;
+}
+
+.screenshotsNavigationBar {
+  margin: -4% auto 10%;
+  width: 60px;
+}
+
+.screenshotNavigationTab {
+  background-color: #8a929e;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 10px;
+}
+
+.screenshotNavigationSelectedTab {
+  background-color: #14aa46;
+}
+
+.downloadTitle {
   color: #4965d6;
 }
 
-.downloadContainer {
+.downloadsContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 7% auto 0;
 }
 
-.androidDownlodContainer {
-  margin-right: 20px;
-  padding: 30px;
-  width: 75px;
-  height: 200px;
-}
-
-.iosDownlodContainer {
-  margin-left: 20px;
+.downloadContainer {
+  margin: 0 20px;
   padding: 30px;
   width: 75px;
   height: 200px;
@@ -105,6 +156,7 @@ a {
 .osName {
   font: 24px sans-serif;
   color: #8a929e;
+  text-align: center;
 }
 
 .osIcon {
@@ -120,12 +172,16 @@ a {
   color: #000000;
 }
 
-.downloadArrowDown {
+.arrowDown {
   font-size: 30px;
   color: #8a929e;
 }
 
-.infoContainer {
+.soonText {
+  font: 24px sans-serif;
+}
+
+.info {
   background-color: #1f2333;
   text-align: left;
   color: #ffffff;
@@ -134,10 +190,39 @@ a {
   padding: 20px;
 }
 
-.githubLink {
+.githubText {
   color: #ffffff;
 }
 
 .contactsText {
   margin-top: 10px;
+}
+
+@media (min-width: 680px) {
+  .flagButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 130px;
+    height: none;
+    padding: 12px;
+  }
+  .languageFlag {
+    position: static;
+    cursor: pointer;
+    top: none;
+    left: none;
+    height: 60px;
+  }
+}
+
+@media (min-width: 880px) {
+  .descriptionText {
+    width: 700px;
+    text-align: left;
+    color: #000000;
+    font: 33px sans-serif;
+    margin: 5% auto;
+    padding: 30px;
+  }
 }

@@ -9,78 +9,73 @@
     <script
       src="https://kit.fontawesome.com/273460c94f.js"
       crossorigin="anonymous"
-      async
     ></script>
     <script src="assets/script.js" async></script>
   </head>
   <body>
     <div class="flagButtons container">
-      <img alt="ruFlag" id="ruFlag" height="70px" />
-      <img alt="usFlag" id="usFlag" height="70px" />
+      <img alt="ruFlag" class="languageFlag" id="ruFlag" />
+      <img alt="usFlag" class="languageFlag" id="usFlag" />
     </div>
-    <img src="assets/logo.png" alt="Logo" class="logoImage" height="450px" />
-    <div class="appName title container"></div>
-    <div class="description container"></div>
-    <div class="downloadTitle container" id="goToDownloadButton"></div>
-    <div class="screenshotsTitle title container"></div>
-    <div class="screenshotsContainer">
-      <img
-        alt="upcomingHolidaysScreenScreenshot"
-        id="upcomingHolidaysScreenScreenshot"
-        class="container"
-        height="740px"
-        style="margin-right: 100px;"
-      />
-      <img
-        alt="categoriesScreenScreenshot"
-        id="categoriesScreenScreenshot"
-        class="container"
-        height="740px"
-        style="margin-right: 100px;"
-      />
-      <img
-        alt="settingsScreenScreenshot"
-        id="settingsScreenScreenshot"
-        class="container"
-        height="740px"
-      />
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo" />
     </div>
-    <div class="downloadTitle title container" id="downloadTitle"></div>
-    <div class="downloadContainer">
+    <div class="appTitle appName title container"></div>
+    <div class="descriptionText description container"></div>
+    <div class="scrollToDownloadButton download container"></div>
+    <div class="screenshotsTitle screenshots title container"></div>
+    <div class="screenshotsSwiper">
+      <div class="screenshotsContainer">
+        <div class="screenshotContainer">
+          <img
+            id="upcomingHolidaysScreenScreenshot"
+            class="screenshot container"
+          />
+        </div>
+        <div class="screenshotContainer">
+          <img id="categoriesScreenScreenshot" class="screenshot container" />
+        </div>
+        <div class="screenshotContainer">
+          <img id="settingsScreenScreenshot" class="screenshot container" />
+        </div>
+      </div>
+    </div>
+    <div class="screenshotsNavigationBar">
+      <div
+        class="screenshotNavigationTab screenshotNavigationSelectedTab"
+      ></div>
+      <div class="screenshotNavigationTab"></div>
+      <div class="screenshotNavigationTab"></div>
+    </div>
+    <div class="downloadTitle download title container"></div>
+    <div class="downloadsContainer">
       <a href="builds/android/Holidays-app_v0.1.4.apk" download>
-        <div class="container androidDownlodContainer">
-          <div class="osName">
-            Android
-          </div>
+        <div class="downloadContainer container">
+          <div class="osName">Android</div>
           <div class="osIcon androidIcon">
             <i class="fab fa-android"></i>
           </div>
-          <div class="downloadArrowDown">
+          <div class="arrowDown">
             <i class="fas fa-arrow-circle-down"></i>
           </div>
         </div>
       </a>
       <a download>
-        <div class="container iosDownlodContainer">
-          <div class="osName">
-            Ios
-          </div>
+        <div class="downloadContainer container">
+          <div class="osName">Ios</div>
           <div class="osIcon iosIcon">
             <i class="fab fa-apple"></i>
           </div>
-          <div
-            class="soonText downloadArrowDown"
-            style="font: 33px sans-serif;"
-          ></div>
+          <div class="soonText soon arrowDown"></div>
         </div>
       </a>
     </div>
-    <div class="infoContainer container">
+    <div class="info container">
       <a
-        class="githubLink"
+        class="githubText github"
         href="http://github.com/Holidays-App/Holidays-App"
       ></a>
-      <div class="contactsText"></div>
+      <div class="contactsText contacts"></div>
     </div>
   </body>
 </html>

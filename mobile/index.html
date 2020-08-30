@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Holidays App</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
-    <link href="assets/styles.css" rel="stylesheet" />
-    <script src="assets/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/styles.css" />
     <script
       src="https://kit.fontawesome.com/273460c94f.js"
       crossorigin="anonymous"
@@ -16,119 +14,68 @@
   </head>
   <body>
     <div class="flagButtons container">
-      <img alt="ruFlag" id="ruFlag" height="47px" />
-      <img alt="usFlag" id="usFlag" height="47px" />
+      <img alt="ruFlag" class="languageFlag" id="ruFlag" />
+      <img alt="usFlag" class="languageFlag" id="usFlag" />
     </div>
-    <div style="width: 78%; margin: 0 auto">
-      <img
-        src="assets/logo.png"
-        alt="Logo"
-        class="logoImage"
-        style="max-width: 100%; height: auto"
-      />
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo" />
     </div>
-    <div class="appName title container"></div>
-
-    <div class="description"></div>
-    <div class="downloadTitle container" id="goToDownloadButton"></div>
-    <div class="screenshotsTitle title container"></div>
-
-    <div
-      id="swiper"
-      style="width: 100%; overflow: hidden; padding: 20px 0 20px 0"
-    >
-      <div style="text-align: center; width: 300%">
-        <div class="swipeContainer" style="width: 33%; float: left">
+    <div class="appTitle appName title container"></div>
+    <div class="descriptionText description container"></div>
+    <div class="scrollToDownloadButton download container"></div>
+    <div class="screenshotsTitle screenshots title container"></div>
+    <div class="screenshotsSwiper">
+      <div class="screenshotsContainer">
+        <div class="screenshotContainer">
           <img
             id="upcomingHolidaysScreenScreenshot"
-            class="container"
-            style="width: 80%"
+            class="screenshot container"
           />
         </div>
-        <div class="swipeContainer" style="width: 33%; float: left">
-          <img
-            id="categoriesScreenScreenshot"
-            class="container"
-            style="width: 80%"
-          />
+        <div class="screenshotContainer">
+          <img id="categoriesScreenScreenshot" class="screenshot container" />
         </div>
-        <div class="swipeContainer" style="width: 33%; float: left">
-          <img
-            id="settingsScreenScreenshot"
-            class="container"
-            style="width: 80%"
-          />
+        <div class="screenshotContainer">
+          <img id="settingsScreenScreenshot" class="screenshot container" />
         </div>
       </div>
     </div>
-    <div style="margin: 0 auto; width: 60px">
+    <div class="screenshotsNavigationBar">
       <div
-        class="screenshotNum"
-        style="
-          background-color: #14aa46;
-          height: 10px;
-          width: 10px;
-          border-radius: 10px;
-          float: left;
-          margin-right: 10px;
-        "
+        class="screenshotNavigationTab screenshotNavigationSelectedTab"
       ></div>
-      <div
-        class="screenshotNum"
-        style="
-          background-color: #8a929e;
-          height: 10px;
-          width: 10px;
-          border-radius: 10px;
-          float: left;
-          margin-right: 10px;
-        "
-      ></div>
-      <div
-        class="screenshotNum"
-        style="
-          background-color: #8a929e;
-          height: 10px;
-          width: 10px;
-          border-radius: 10px;
-          float: left;
-          margin-right: 10px;
-        "
-      ></div>
+      <div class="screenshotNavigationTab"></div>
+      <div class="screenshotNavigationTab"></div>
     </div>
-
-    <div class="downloadTitle title container" id="downloadTitle"></div>
-    <div class="downloadContainer">
+    <div class="downloadTitle download title container"></div>
+    <div class="downloadsContainer">
       <a href="builds/android/Holidays-app_v0.1.4.apk" download>
-        <div class="container androidDownlodContainer">
+        <div class="downloadContainer container">
           <div class="osName">Android</div>
           <div class="osIcon androidIcon">
             <i class="fab fa-android"></i>
           </div>
-          <div class="downloadArrowDown">
+          <div class="arrowDown">
             <i class="fas fa-arrow-circle-down"></i>
           </div>
         </div>
       </a>
       <a download>
-        <div class="container iosDownlodContainer">
+        <div class="downloadContainer container">
           <div class="osName">Ios</div>
           <div class="osIcon iosIcon">
             <i class="fab fa-apple"></i>
           </div>
-          <div
-            class="soonText downloadArrowDown"
-            style="font: 21px sans-serif"
-          ></div>
+          <div class="soonText soon arrowDown"></div>
         </div>
       </a>
     </div>
-    <div class="infoContainer container">
+    <div class="info container">
       <a
-        class="githubLink"
+        class="githubText github"
         href="http://github.com/Holidays-App/Holidays-App"
       ></a>
-      <div class="contactsText"></div>
+      <div class="contactsText contacts"></div>
     </div>
   </body>
 </html>
