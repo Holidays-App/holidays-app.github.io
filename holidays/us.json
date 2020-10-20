@@ -49,7 +49,7 @@
   },
   {
     "name": "The Day of the Programmer",
-    "description": "The Day of the Programmer is an international professional day that is celebrated on the 256th (2 to 8 degrees) day of each year.\\n\\nThe number 256 (28) was chosen because it is the number of distinct values that can be represented with a byte, a value well known to programmers. 256 is also the highest power of two that is less than 365, the number of days in a common year.",
+    "description": "The Day of the Programmer is an international professional day that is celebrated on the 256th (2 to 8 degrees) day of each year.\n\nThe number 256 (28) was chosen because it is the number of distinct values that can be represented with a byte, a value well known to programmers. 256 is also the highest power of two that is less than 365, the number of days in a common year.",
     "message": "On the day of technology and progress, we especially celebrate the day of programmers! Programmers are people who are always one step ahead, creating new programs, algorithms, solutions!",
     "date": {
       "day": 12,
