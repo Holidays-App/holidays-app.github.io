@@ -53,7 +53,7 @@ a {
 .appTitle {
   margin-top: 0;
   font-size: 50px;
-  color: #f7941d;
+  color: black;
 }
 
 .descriptionText {
@@ -72,11 +72,11 @@ a {
   right: 4%;
   bottom: 6%;
   font-size: 33px;
-  color: #4965d6;
+  color: #AC0735;
 }
 
 .screenshotsTitle {
-  color: #14aa46;
+  color: #F5C684;
 }
 
 .screenshotsSwiper {
@@ -122,11 +122,11 @@ a {
 }
 
 .screenshotNavigationSelectedTab {
-  background-color: #14aa46;
+  background-color: #F5C684;
 }
 
 .downloadTitle {
-  color: #4965d6;
+  color: #F5C684;
 }
 
 .downloadsContainer {
