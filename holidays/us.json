@@ -8,7 +8,6 @@
       "month": 1
     },
     "category": "General holidays",
-    "icon": "",
     "notify": true
   },
   {
@@ -20,7 +19,6 @@
       "month": 3
     },
     "category": "General holidays",
-    "icon": "",
     "notify": true
   },
   {
@@ -32,7 +30,6 @@
       "month": 2
     },
     "category": "General holidays",
-    "icon": "",
     "notify": true
   },
   {
@@ -44,7 +41,6 @@
       "month": 6
     },
     "category": "General holidays",
-    "icon": "",
     "notify": false
   },
   {
@@ -56,7 +52,6 @@
       "month": 9
     },
     "category": "General holidays",
-    "icon": "",
     "notify": true
   }
 ]
