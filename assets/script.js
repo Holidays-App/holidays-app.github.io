@@ -4,14 +4,14 @@ const { default: defaultDictinory, us: usDictinory, ru: ruDictinory } = {
       "«Holidays» - простой путеводитель по праздникам на каждый день 📅<br><br>Приложение напоминит и расскажет о всех праздниках, так что вы никогда не будете в стороне 🎉",
     download: 'Скачать <i class="fas fa-cloud-download-alt"></i>',
     screenshots: 'Скриншоты <i class="fas fa-mobile-alt"></i>',
-    soon: "Скоро...",
+    soon: "К сожалению, никогда",
   },
   us: {
     description:
       "«Holidays» - a simple holiday guide for every day 📅<br><br>The application will remind and tell you about all the holidays, so you will never be on the sidelines 🎉",
     download: 'Download <i class="fas fa-cloud-download-alt"></i>',
     screenshots: 'Screenshots <i class="fas fa-mobile-alt"></i>',
-    soon: "Soon...",
+    soon: "Sorry, but never",
   },
   default: {
     appName: "Holidays",

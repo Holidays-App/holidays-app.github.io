@@ -167,7 +167,8 @@ a {
 }
 
 .soonText {
-  font-size: 33px;
+  margin: 0;
+  font-size: 21px;
 }
 
 .info {
@@ -271,7 +272,7 @@ a {
   }
 
   .soonText {
-    font-size: 24px;
+    font-size: 17px;
   }
 
   .info {
