@@ -11,8 +11,7 @@
       "day": 1,
       "month": 1
     },
-    "category": "General holidays",
-    "notify": true
+    "category": "General holidays"
   },
   {
     "id": 0,
@@ -23,8 +22,7 @@
       "day": 8,
       "month": 3
     },
-    "category": "General holidays",
-    "notify": true
+    "category": "General holidays"
   },
   {
     "id": 11,
@@ -35,8 +33,7 @@
       "day": 14,
       "month": 2
     },
-    "category": "General holidays",
-    "notify": true
+    "category": "General holidays"
   },
   {
     "id": 1,
@@ -47,8 +44,7 @@
       "day": 1,
       "month": 6
     },
-    "category": "General holidays",
-    "notify": false
+    "category": "General holidays"
   },
   {
     "id": 3,
@@ -59,7 +55,6 @@
       "day": 12,
       "month": 9
     },
-    "category": "General holidays",
-    "notify": true
+    "category": "General holidays"
   }
 ]
