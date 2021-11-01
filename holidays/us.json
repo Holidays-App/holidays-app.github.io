@@ -11,7 +11,8 @@
       "day": 1,
       "month": 1
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 0,
@@ -22,7 +23,8 @@
       "day": 8,
       "month": 3
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 11,
@@ -33,7 +35,8 @@
       "day": 14,
       "month": 2
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 1,
@@ -44,17 +47,19 @@
       "day": 1,
       "month": 6
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 3,
     "name": "The Day of the Programmer",
-    "description": "The Day of the Programmer is an international professional day that is celebrated on the 256th (2 to 8 degrees) day of each year.\n\nThe number 256 (28) was chosen because it is the number of distinct values that can be represented with a byte, a value well known to programmers. 256 is also the highest power of two that is less than 365, the number of days in a common year.",
+    "description": "The Day of the Programmer is an international professional day that is celebrated on the 256th (2 to 8 degrees) day of each year.\nThe number 256 was chosen because it is the number of distinct values that can be represented with a byte, a value well known to programmers. 256 is also the highest power of two that is less than 365, the number of days in a common year.",
     "message": "On the day of technology and progress, we especially celebrate the day of programmers! Programmers are people who are always one step ahead, creating new programs, algorithms, solutions!",
     "date": {
       "type": "dayInYear",
       "day": 256
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   }
 ]

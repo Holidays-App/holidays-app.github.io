@@ -8,7 +8,8 @@
       "day": 8,
       "month": 3
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 1,
@@ -22,7 +23,8 @@
       "day": 1,
       "month": 6
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 2,
@@ -33,7 +35,8 @@
       "day": 7,
       "month": 1
     },
-    "category": "Religious holiday"
+    "category": "Religious holiday",
+    "defaultNotify": true
   },
   {
     "id": 3,
@@ -47,7 +50,8 @@
       "type": "dayInYear",
       "day": 256
     },
-    "category": "Professional Holiday"
+    "category": "Professional Holiday",
+    "defaultNotify": true
   },
   {
     "id": 4,
@@ -58,7 +62,8 @@
       "day": 5,
       "month": 10
     },
-    "category": "Professional Holiday"
+    "category": "Professional Holiday",
+    "defaultNotify": true
   },
   {
     "id": 5,
@@ -69,7 +74,8 @@
       "day": 1,
       "month": 10
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 6,
@@ -83,7 +89,8 @@
       "day": 1,
       "month": 5
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 7,
@@ -94,7 +101,8 @@
       "day": 9,
       "month": 5
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 8,
@@ -108,7 +116,8 @@
       "day": 4,
       "month": 11
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 9,
@@ -124,7 +133,8 @@
       "month": 11,
       "number": -1
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 10,
@@ -138,7 +148,8 @@
       "day": 12,
       "month": 12
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 11,
@@ -149,7 +160,8 @@
       "day": 14,
       "month": 2
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 12,
@@ -163,7 +175,8 @@
       "day": 1,
       "month": 1
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 13,
@@ -174,7 +187,8 @@
       "day": 23,
       "month": 2
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 14,
@@ -185,7 +199,8 @@
       "day": 12,
       "month": 6
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 15,
@@ -198,7 +213,8 @@
       "month": 10,
       "number": 3
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 16,
@@ -212,7 +228,8 @@
       "day": 1,
       "month": 9
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 17,
@@ -226,7 +243,8 @@
       "day": 22,
       "month": 8
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 18,
@@ -236,7 +254,8 @@
     "date": {
       "type": "mondayOfButterWeek"
     },
-    "category": "Traditional holidays"
+    "category": "Traditional holidays",
+    "defaultNotify": true
   },
   {
     "id": 19,
@@ -247,7 +266,8 @@
       "day": 16,
       "month": 1
     },
-    "category": "Cultural Holiday"
+    "category": "Cultural Holiday",
+    "defaultNotify": true
   },
   {
     "id": 20,
@@ -258,7 +278,8 @@
       "day": 9,
       "month": 1
     },
-    "category": "Carnivals and festivals"
+    "category": "Carnivals and festivals",
+    "defaultNotify": false
   },
   {
     "id": 21,
@@ -269,7 +290,8 @@
       "day": 14,
       "month": 1
     },
-    "category": "Carnivals and festivals"
+    "category": "Carnivals and festivals",
+    "defaultNotify": false
   },
   {
     "id": 22,
@@ -283,7 +305,8 @@
       "day": 19,
       "month": 11
     },
-    "category": "General holidays"
+    "category": "General holidays",
+    "defaultNotify": true
   },
   {
     "id": 23,
@@ -296,6 +319,7 @@
     "date": {
       "type": "orthodoxEaster"
     },
-    "category": "Religious holiday"
+    "category": "Religious holiday",
+    "defaultNotify": true
   }
 ]
