@@ -7,9 +7,9 @@
     "images": [
       "newYear.jpg"
     ],
-    "date": {
-      "day": 1,
-      "month": 1
+    "icon": {
+      "type": "svg",
+      "fileName": "snowflake.svg"
     },
     "date": {
       "day": 1,
