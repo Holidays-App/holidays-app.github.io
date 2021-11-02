@@ -160,6 +160,10 @@
       "day": 14,
       "month": 2
     },
+    "icon": {
+      "type": "svg",
+      "fileName": "heart.svg"
+    },
     "category": "General holidays",
     "defaultNotify": true
   },
@@ -174,6 +178,10 @@
     "date": {
       "day": 1,
       "month": 1
+    },
+    "icon": {
+      "type": "svg",
+      "fileName": "snowflake.svg"
     },
     "category": "General holidays",
     "defaultNotify": true
@@ -242,6 +250,10 @@
     "date": {
       "day": 22,
       "month": 8
+    },
+    "icon": {
+      "type": "image",
+      "fileName": "russian_flag.png"
     },
     "category": "General holidays",
     "defaultNotify": true

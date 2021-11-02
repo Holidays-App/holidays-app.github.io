@@ -11,6 +11,10 @@
       "day": 1,
       "month": 1
     },
+    "date": {
+      "day": 1,
+      "month": 1
+    },
     "category": "General holidays",
     "defaultNotify": true
   },
@@ -34,6 +38,10 @@
     "date": {
       "day": 14,
       "month": 2
+    },
+    "icon": {
+      "type": "svg",
+      "fileName": "heart.svg"
     },
     "category": "General holidays",
     "defaultNotify": true
