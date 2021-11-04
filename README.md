@@ -7,3 +7,4 @@ Please, look at Holidays app 🎁 ([This website](https://holidays-app.github.io
 # Thanks for help
 
 Much thanks [Danil Kopysov](https://github.com/adnjoj) for creating this website
+Much thanks Alisa Dadueva for design
